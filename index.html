@@ -2,28 +2,25 @@
 <!DOCTYPE html>
 <!-- Comments -->
 <html lang="en">
-  
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Christina J. Parks DBA Krystyna Jack">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-    <title>Survey Form</title>
+    <title>Anthropocene Times Survey Form</title>
   </head>
-  
   <body>
     <div class="container">
+      
     <header id="header">
-      <h1 id="title">Survey Form</h1> <!-- ID - FCC REQ -->
-
+      <h1 id="title">Anthropocene Times<br> Survey Form</h1> <!-- ID - FCC REQ -->
       <p id="description"><em>Thank you for taking the time to help us improve!</em></p> <!-- ID - FCC REQ -->
     </header>
-    
+
     <div class="form-container">
     <form id="survey-form"><!-- ID - FCC REQ -->
-      
+
       <!--PERSONAL INFO -->
       <div class="form-set">
       <label id="name-label" for="name">Name</label><br>
@@ -33,63 +30,62 @@
       <label id="number-label" for="age">Age (optional)</label><br>
       <input type="number" id="number" name="age" min="1" max="150" placeholder="Age"><br>
       </div>
-      
+
       <!--DROPDOWN 1 -->
-      <div class="form-set"> 
-      <label id="current-role" for="current-role">Select current role:</label><br>
+      <div class="form-set">
+      <label id="current-role" for="current-role">Occupation:</label><br>
       <select id="dropdown" name="current-role">
         <option disabled selected value="">Select an option</option>
         <option value="student">Student</option>
         <option value="ftjob">Full Time Job</option>
+        <option value="ptjob">Part Time Job</option>
         <option value="learner">Full Time Learner</option>
         <option value="decline">Prefer not to say</option>
         <option value="other">Other</option>
       </select><br>
     </div>
-      
+
       <!--RADIO -->
-      <div class="form-set"> 
-      <label for="recommend" name="recommend">Would you recommend [Company] to a friend?</label><br>
-      <input type="radio" id="rec-definitely" name="recommend" value="rec-definitely">
-      <label for="rec-definitely">Definitely</label><br>
-      <input type="radio" id="rec-maybe" name="recommend" value="rec-maybe">
-      <label for="rec-maybe">Maybe</label><br>
+      <div class="form-set">
+      <label for="recommend" name="recommend">Would you recommend Anthropocene Times to a friend?</label><br>
+      <input type="radio" id="rec-yes" name="recommend" value="rec-yes">
+      <label for="rec-yes">Yes</label><br>
       <input type="radio" id="rec-no" name="recommend" value="rec-no">
       <label for="rec-no">No</label><br>
+      <input type="radio" id="rec-maybe" name="recommend" value="rec-maybe">
+      <label for="rec-Maybe">Maybe</label><br>
     </div>
-      
+
       <!--DROPDOWN FIELD 2-->
-      <div class="form-set"> 
-      <label for="user-fave">What is your favorite feature of [Company]?</label><br>
+      <div class="form-set">
+      <label for="user-fave">What is your favorite feature of Anthopocene Times?</label><br>
       <select id="dropdown2" name="user-fave">
         <option disabled selected value="">Select an option</option>
-        <option value="challenges">Challenges</option>
+        <option value="articles">Articles</option>
         <option value="projects">Projects</option>
         <option value="community">Community</option>
-        <option value="opensource">Open Source</option>
+        <option value="newsletter">Newsletter</option>
       </select><br>
       </div>
-      
+
       <!--CHECKBOXES -->
-      <div class="form-set"> 
+      <div class="form-set">
       <label id="improve" for="improve">What would you like to see improved? <span id="check-all">(Check all that apply)</span></label><br>
-      <input type="checkbox" id="fe-proj" name="fe-proj" value="front-end projects">
-      <label for="fe-proj">Front End Projects</label><br>
-      <input type="checkbox" id="be-proj" name="be-proj" value="back-end projects">
-      <label for="be-proj">Back End Projects</label><br>
-      <input type="checkbox" id="datavis" name="datavis" value="data visualization">
-      <label for="datavis">Data Visualization</label><br>
-      <input type="checkbox" id="challenges" name="challenges" value="challenges">
-      <label for="challenges">Challenges</label><br>
-      <input type="checkbox" id="oscomm" name="oscomm" value="open source community">
-      <label for="oscomm">Open Source Community</label><br>
+        <input type="checkbox" id="articles" name="articles" value="articles">
+      <label for="articles">Articles</label><br>
+        <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+      <label for="newsletter">Newsletter</label><br>
+      <input type="checkbox" id="projects" name="projects" value="projects">
+      <label for="projects">Projects</label><br>
+      <input type="checkbox" id="comm" name="comm" value="community">
+      <label for="comm">Community</label><br>
       <input type="checkbox" id="videos" name="videos" value="videos">
       <label for="videos">Videos</label><br>
       </div>
-      
+
       <!--TEXT AREA / COMMENT BOX -->
-      <div class="form-set"> 
-      <label id="comments" for="comments">Any comments or suggestions?</label><br>
+      <div class="form-set">
+      <label id="comments" for="comments">Add any comments or suggestions below:</label><br>
       <textarea id="comments name="comments" placeholder="Enter your comment here..." rows="5" cols="30"></textarea>
       <br>
       <button type="submit" id="submit" value="Submit">Submit</button>
@@ -97,6 +93,6 @@
     </div>
     </form>
     </div>
-                                                
+
   </body>
 </html>
