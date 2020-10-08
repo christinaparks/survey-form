@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#title, #description {
+  max-width: 768px;
+  margin: auto;
+  background-color: #5f9ea0;
+  text-align: center;
+  padding: 25px;
+  
+}
+
+#form-container {
+  width: 768px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #8fbc8f;
+  text-align: justify;
+}
+
+}
+input, select {
+  padding: 5px;
+  margin-bottom: 20px;
+}
