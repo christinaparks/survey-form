@@ -1,32 +1,110 @@
 body {
-  font-family: Arial;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-#title, #description {
-  max-width: 768px;
-  margin: auto;
-  background-color: #5f9ea0;
-  text-align: center;
-  padding: 25px;
+    background-image: linear-gradient(rgba(150, 18, 139, 0.3),  rgba(0, 0, 0, 0.5)), url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(243, 243, 243);
+  }
   
+  .container {
+    display: flex;
+    flex-direction: column;
+
+  }
+  header {
+    margin: 0 auto;
+    text-align: center;
 }
 
-#form-container {
-  width: 768px;
-  margin: auto;
-  margin-top: 40px;
-  padding: 10px;
-  background-color: #8fbc8f;
-  text-align: justify;
+h1 {
+    letter-spacing: 1px;
 }
 
+  .form-container {
+    margin: 10px auto;
+    background-color:  rgba(0, 0, 0, 0.5);
+    
+  }
+
+  .form-set {
+      margin: .75rem;
+  }
+
+  label {
+        }
+
+  input[type=text], input[type=email], input[type=number] {
+      width: 100%;
+      padding: 5px 20px;
+      margin: 10px 0;
+      box-sizing: border-box;
+  }
+  input[type=number] {
+      width: 25%;
+  }
+
+  input[type=radio], input[type=checkbox] {
+      padding: 5px 0;
+      margin: 10px 0;
+  }
+
+  select {
+      width: 100%;
+      padding: 5px 20px;
+      margin: 8px 0;
+  }
+
+  textarea {
+      width: 100%;
+      margin: 8px 0;
+  }
+
+  button[type=submit] {
+      width: 100%;
+      margin: 15px auto;
+      padding: 10px;
+  }
+
+  select, textarea, input[type=text], input[type=email], input[type=number], button[type=submit] {
+    border: 1.5px solid;
+    border-radius: 4px;
+      
+  }
+
+
+
+/*
+  input {
+      background-color: darkorange;
+  }
+
+  select {
+      background-color: darkorchid;
+  }
+
+  textarea {
+      background-color: greenyellow;
+  }
+
+  button {
+      background-color: dodgerblue;
+  }
+
+  .container {
+    background-color: brown;
+    
+  }
+  header {
+    background-color: cadetblue;
+    
 }
-input, select {
-  padding: 5px;
-  margin-bottom: 20px;
-}
+
+  .form-container {
+    background-color: cornflowerblue;
+  }
+
+  .form-set {
+      background-color: cornsilk;
+  }
+
+  */
